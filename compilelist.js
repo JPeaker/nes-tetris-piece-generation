@@ -5,10 +5,13 @@ const files = [
   'UneIsOIIEwk - Semifinal 2',
   'nfo8hmIcoDQ - Finals',
 ]
-
+// const files = [
+//   'Finals',
+//   'Semis - Buco vs Jonas'
+// ]
 let contents = [];
 files.forEach(file => {
-  contents = contents.concat(fs.readFileSync(`../CTWC 2019/${file}.txt`, 'utf8').split('\n'));
+  contents = contents.concat(fs.readFileSync(`./CTWC 2019/${file}.txt`, 'utf8').split('\n'));
 })
 
 const results = {};
